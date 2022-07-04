@@ -12,7 +12,7 @@
 		4ECD2EAA2870D15F001284AF /* IOSystemExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD2EA92870D15F001284AF /* IOSystemExampleApp.swift */; };
 		4ECD2EAE2870D160001284AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD2EAD2870D160001284AF /* Assets.xcassets */; };
 		4ECD2EB12870D160001284AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ECD2EB02870D160001284AF /* Preview Assets.xcassets */; };
-		4ECD2EBB2870D66B001284AF /* SystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD2EBA2870D66B001284AF /* SystemView.swift */; };
+		4ECD2EBB2870D66B001284AF /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECD2EBA2870D66B001284AF /* DataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		4ECD2EA92870D15F001284AF /* IOSystemExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSystemExampleApp.swift; sourceTree = "<group>"; };
 		4ECD2EAD2870D160001284AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ECD2EB02870D160001284AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4ECD2EBA2870D66B001284AF /* SystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemView.swift; sourceTree = "<group>"; };
+		4ECD2EBA2870D66B001284AF /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		4ECD2EBC2870D6B6001284AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4ECD2EBD2870D6C8001284AF /* IOSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = IOSystem; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +78,7 @@
 				4ECD2EAD2870D160001284AF /* Assets.xcassets */,
 				4ECD2EAF2870D160001284AF /* Preview Content */,
 				4ECD2EA92870D15F001284AF /* IOSystemExampleApp.swift */,
-				4ECD2EBA2870D66B001284AF /* SystemView.swift */,
+				4ECD2EBA2870D66B001284AF /* DataView.swift */,
 				4ECC0CD62870D7D600BF37CB /* Views */,
 			);
 			path = IOSystemExample;
@@ -174,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ECC0CD82870D7E000BF37CB /* TextView.swift in Sources */,
-				4ECD2EBB2870D66B001284AF /* SystemView.swift in Sources */,
+				4ECD2EBB2870D66B001284AF /* DataView.swift in Sources */,
 				4ECD2EAA2870D15F001284AF /* IOSystemExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

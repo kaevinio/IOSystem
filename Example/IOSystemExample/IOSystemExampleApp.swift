@@ -12,7 +12,7 @@ struct IOSystemExampleApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SystemView()
+            DataView()
         }
     }
     
