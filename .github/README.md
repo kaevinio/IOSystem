@@ -29,17 +29,19 @@ I really appreciate you **[buying me a coffee ☕️](https://ko-fi.com/kaevin)*
 
 ## 🪄 Features
 
-// TODO
+- [x] Current battery level (percentage)
+- [x] Different values of your app and device
+- [x] Device storage (in GB)
 
 
 ## 📱 Screenshots
 
-// TODO
+<img src="assets/README-screenshot.png" width="300">
 
 
 ## 🛠 Installation
 ##### Requirements
-- iOS 15.0+ / macOS 12.0
+- iOS 14.0+ / macOS 11.0
 - Xcode 13+
 - Swift 5+
 
@@ -49,4 +51,30 @@ In Xcode, go to `File > Add Packages` and add `https://github.com/kaevinio/IOSys
 
 ## 📝 How to Use
 
-// TODO
+To read system values, you need to `import IOSystem` at the top of your file. Depending on the values you want to read, there are three different Managers available: `BatteryManager`, `SystemManager` and `StorageManager`. Each manager contains values which can easily be read by calling `SystemManager.appName` or `StorageManager.totalDiskSpaceInGB`.
+
+You can find a full list of available values below and in the example project.
+
+**Important**: To read from `BatteryManager`, you need to call `BatteryManager()` with parenthesis, because it needs to be initialized before being able to read battery levels.
+
+##### BatteryManager
+- .batteryLevel
+
+##### SystemManager
+- .appName
+- .platform
+- .systemVersion
+- .appVersion
+- .buildNumber
+- .appName
+- .modelName
+- .modelType
+- .operatingSystem
+- .locale
+
+
+
+##### StorageManager
+- .totalDiskSpaceInGB
+- .usedDiskSpaceInGB
+- .freeDiskSpaceInGB
