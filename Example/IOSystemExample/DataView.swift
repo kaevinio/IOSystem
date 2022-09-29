@@ -33,14 +33,14 @@ struct DataView: View {
                         
                         VStack(spacing: 16) {
                             TextView(header: "App Name", info: SystemManager.appName)
-                            TextView(header: "Platform", info: SystemManager.platform)
+                            TextView(header: "Locale", info: SystemManager.locale)
+                            TextView(header: "Platform", info: SystemManager.platform.rawValue)
                             TextView(header: "System Version", info: SystemManager.systemVersion)
                             TextView(header: "App Version", info: SystemManager.appVersion)
-                            TextView(header: "Build Number", info: SystemManager.buildNumber)
-                            TextView(header: "Model Name", info: SystemManager.modelName)
-                            TextView(header: "Model Type", info: SystemManager.modelType)
-                            TextView(header: "Operating System", info: SystemManager.operatingSystem)
-                            TextView(header: "Locale", info: SystemManager.locale)
+                            TextView(header: "App Build Number", info: SystemManager.appBuildNumber)
+                            TextView(header: "Device", info: SystemManager.device.name)
+                            TextView(header: "Device Name", info: SystemManager.deviceName.name)
+                            TextView(header: "Device Type", info: SystemManager.deviceType)
                         }
                     }
                     
