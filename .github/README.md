@@ -62,15 +62,14 @@ You can find a full list of available values below and in the example project.
 
 ##### SystemManager
 - .appName
+- .locale
 - .platform
 - .systemVersion
 - .appVersion
-- .buildNumber
-- .appName
-- .modelName
-- .modelType
-- .operatingSystem
-- .locale
+- .appBuildNumber
+- .device
+- .deviceName
+- .deviceType
 
 
 
