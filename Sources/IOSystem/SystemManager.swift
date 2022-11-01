@@ -51,6 +51,8 @@ public class SystemManager {
         if platform == .iOS {
             #if canImport(UIKit)
             return UIDevice.current.userInterfaceIdiom == .pad ? .iPad : .iPhone
+            #else
+            return .iPhone
             #endif
         } else if platform == .macOS {
             return .mac
