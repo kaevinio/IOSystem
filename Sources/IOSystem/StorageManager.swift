@@ -5,10 +5,8 @@
 //  Created by Kevin Waltz on 04.07.22.
 //
 
-#if os(iOS)
-import UIKit
+import Foundation
 
-/// We currently only support reading the disk space on iOS
 public class StorageManager {
     // MARK: - Values in GB (GigaBytes)
     
@@ -59,4 +57,3 @@ fileprivate struct Units {
         return (megabytes / 1_024  * 100).rounded() / 100
     }
 }
-#endif

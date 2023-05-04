@@ -11,9 +11,10 @@ import IOSystem
 struct DataView: View {
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 VStack(spacing: 36) {
+                    #if os(iOS)
                     VStack(spacing: 8) {
                         Text("Battery")
                             .foregroundColor(.gray)
@@ -24,6 +25,7 @@ struct DataView: View {
                             TextView(header: "Battery Level", info: "\(BatteryManager().batteryLevel)")
                         }
                     }
+                    #endif
                     
                     VStack(spacing: 8) {
                         Text("System")
@@ -39,7 +41,7 @@ struct DataView: View {
                             TextView(header: "App Version", info: SystemManager.appVersion)
                             TextView(header: "App Build Number", info: SystemManager.appBuildNumber)
                             TextView(header: "Device", info: SystemManager.device.name)
-                            TextView(header: "Device Name", info: SystemManager.deviceName.name)
+                            TextView(header: "Device Name", info: SystemManager.deviceName)
                             TextView(header: "Device Type", info: SystemManager.deviceType)
                         }
                     }
@@ -62,7 +64,6 @@ struct DataView: View {
             }
             .navigationTitle("IOSystem")
         }
-        .navigationViewStyle(.stack)
     }
     
 }
