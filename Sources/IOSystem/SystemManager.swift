@@ -125,7 +125,7 @@ extension SystemManager {
     }
     
     static private func getVersionCode() -> String {
-        var size : Int = 0
+        var size: Int = 0
         sysctlbyname("hw.model", nil, &size, nil, 0)
         
         var model = [CChar](repeating: 0, count: Int(size))
@@ -135,15 +135,15 @@ extension SystemManager {
     }
     
     static public func macSize() -> String {
-        let sizeInInches = sizeInInches()
-        
-        switch sizeInInches {
+        switch sizeInInches() {
         case 11:
             return MacSize.screen11Inch.title
         case 12:
             return MacSize.screen12Inch.title
         case 13:
             return MacSize.screen13Inch.title
+        case 14:
+            return MacSize.screen14Inch.title
         case 15:
             return MacSize.screen15Inch.title
         case 16:
