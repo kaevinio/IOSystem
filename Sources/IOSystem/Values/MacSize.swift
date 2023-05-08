@@ -13,6 +13,7 @@ public enum MacSize: Int, Comparable {
     case screen11Inch,
          screen12Inch,
          screen13Inch,
+         screen14Inch,
          screen15Inch,
          screen16Inch,
          screen17Inch,
@@ -24,10 +25,11 @@ public enum MacSize: Int, Comparable {
     
     var title: String {
         switch self {
-        case .unknown: return "Unknown"
+        case .unknown: return "-"
         case .screen11Inch: return "11\""
         case .screen12Inch: return "12\""
         case .screen13Inch: return "13\""
+        case .screen14Inch: return "14\""
         case .screen15Inch: return "15\""
         case .screen16Inch: return "16\""
         case .screen17Inch: return "17\""
