@@ -164,10 +164,11 @@ extension SystemManager {
     }
     
     private static func sizeInInches() -> CGFloat {
-        let screen = NSScreen.main
+        let screen = NSScreen.screens.first { $0.localizedName.contains("Built-in") }
         let description = screen?.deviceDescription
         let displayPhysicalSize = CGDisplayScreenSize(description?[NSDeviceDescriptionKey(rawValue: "NSScreenNumber")] as? CGDirectDisplayID ?? 0)
-        return floor(sqrt(pow(displayPhysicalSize.width, 2) + pow(displayPhysicalSize.height, 2)) * 0.0393701);
+        
+        return floor(sqrt(pow(displayPhysicalSize.width, 2) + pow(displayPhysicalSize.height, 2)) * 0.0393701)
     }
 }
 #endif
